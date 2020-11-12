@@ -63,7 +63,7 @@
             </h1>
             <p>
             Teachers and creators have made hundreds of board games to help students practise their English in class. Many of these take the form of PDFs, JGP files or PNGs to print and play and can be found on top sites such as <a href="https://en.islcollective.com/english-esl-worksheets/search/board+game">ISL Collective</a>, <a href="https://busyteacher.org/20378-top-10-print-and-go-games-best-of-busy-teacher.html">Busy Teacher</a> and many others. But what do you do when your class is online? Or if you don't want to waste paper printing? Here is one solution: <br>
-            1. Find and download the game you want to play and, if it's a PDF file, take a screen-shot or convert it to a PNG image file with an online tool like the one<a href="https://pdftoimage.com/">here</a>. Or, if it's a DOC, use MSWord, or your favourite Word Processor to output it as a PDF and then convert it. <br>
+            1. Find and download the game you want to play and, if it's a PDF file, take a screen-shot or convert it to a JPG image file with a free converter like the one at <a href="https://pdf2jpg.net/" target="blank" title="PDF to JPG Converter - Convert PDF to JPG">PDF to JPG Converter</a>. If a DOC export it to a PDF in your word-processor and then convert to JPG. <br>
             2. Replace Super Questions by clicking Load Game to open the your game image here. There are pieces you can drag and a six sided dice. Now your Skype/Zoom/Meeting classes will now have one more option! By the way, we collect no information and image files are not uploaded to any server. The images stay on your computer/device. <br>
             3. Finally, if the game comes out the wrong shape, drag it from the bottom right corner to resize for your screen. Happy Playing!
             </p>
@@ -74,7 +74,10 @@
           <div class="contents">
             <p class="drag2" id="draggy">Drag these pieces to play &uarr;</p>
             <div id="board" class="board">
+           
+
               <div class="imgdiv" id='imgdiv'>
+                <div class="pull-tab"></div>
                   <input type='file' id="getFile" style="display:none">
                   <img id="mypic" src="img/super-questions.jpg" alt="your image" height=200 width=auto>
               </div>
@@ -84,11 +87,12 @@
             <div class="dicediv" id="dicediv">
                 <div class="dice" id="dice">1</div>
                 <button class="roll" id="roll">ROLL</button>
+                <div class="buttondiv">
+                  <button class="butclass" id="getButton" onclick="document.getElementById('getFile').click()">Load Game</button>
+                  <button class="butclass" id="demoBut" onclick="playDemo();">Play This</button>
+             </div>
               </div>
-              <div class="buttondiv">
-                <button class="butclass" id="getButton" onclick="document.getElementById('getFile').click()">Load Game</button>
-                <button class="butclass" id="demoBut" onclick="playDemo();">Play This</button>
-           </div>
+          
           
         </div>
       

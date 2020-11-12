@@ -2,16 +2,15 @@
 
 .footer{
   display: flex;
-  width: 1200px;
+  width: 100vw;
   margin: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: $color-blue;
   padding: 1.5rem 0;
   height: 7rem;
-  background-color: $color-blue;
-  border-top: 1px solid #fff;
+  background-color: #fff;
   box-shadow: $box-shadow-page;
 
   @media only screen and (max-width: $bp-largest){
@@ -30,13 +29,13 @@
 
     p {
     font-size: 1.2rem;
-      color: #fff;
+      color:$color-blue;
     }
   }
 
 }
 
 #footer a{
-  color: $color-yellow;
+  color: $color-green;
 }
 

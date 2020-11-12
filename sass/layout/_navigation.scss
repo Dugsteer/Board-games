@@ -1,9 +1,9 @@
 .nav-bar {
-  background-color: $color-blue;
-  color: #fff;
+  background-color: #fff;
+  color: $color-blue;
   display: grid;
   height: 7rem;
-  width: 1200px;
+  width: 100vw;
   margin: auto;
   overflow: none;
   box-shadow: $box-shadow-page;
@@ -105,7 +105,7 @@
       width: 4rem;
       margin-left: 2rem;
       justify-self: center;
-      fill: #fff;
+      fill: $color-blue;
       &:hover {
         fill: $color-yellow;
       }
@@ -121,7 +121,7 @@
   &__link {
     font-size: 1.4rem;
     align-self: center;
-    color: #fff;
+    color: $color-blue;
     font-family: Montserrat, sans-serif;
     text-decoration: none;
 
@@ -138,9 +138,6 @@
   }
 }
 
-// .link3 {
-//   display: none;
-// }
 
 .menu {
   fill: #fff;

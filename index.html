@@ -72,17 +72,18 @@
           </div>
     
           <div class="contents">
-            <p class="drag2" id="draggy">Drag these pieces to play &uarr;</p>
+          
             <div id="board" class="board">
            
 
               <div class="imgdiv" id='imgdiv'>
                 <div class="pull-tab"></div>
+                <div id="piece1" class="id1"><img src="img/redpiece.svg" alt=""></div>
+                  <div id="piece2" class="id1"><img src="img/blackpiece.svg" alt=""></div>
                   <input type='file' id="getFile" style="display:none">
                   <img id="mypic" src="img/super-questions.jpg" alt="your image" height=200 width=auto>
               </div>
-                  <div id="piece1" class="id1"></div>
-                  <div id="piece2" class="id1"></div>
+                  
           </div>
             <div class="dicediv" id="dicediv">
                 <div class="dice" id="dice">1</div>
@@ -90,6 +91,7 @@
                 <div class="buttondiv">
                   <button class="butclass" id="getButton" onclick="document.getElementById('getFile').click()">Load Game</button>
                   <button class="butclass" id="demoBut" onclick="playDemo();">Play This</button>
+                  <p class="drag2" id="draggy">Drag pieces to play</p>
              </div>
               </div>
           

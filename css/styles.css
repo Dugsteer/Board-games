@@ -129,7 +129,12 @@ h4 {
     margin: 0 5%; } }
 
 .sidebar {
-  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 10vw;
+  right: 10vw;
+  bottom: 0;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -418,7 +423,8 @@ h4 {
     align-self: center;
     color: #40a1da;
     font-family: Montserrat, sans-serif;
-    text-decoration: none; }
+    text-decoration: none;
+    display: none; }
     .nav-bar__link:hover {
       color: #ffe164; }
     @media only screen and (max-width: 50em) {
@@ -426,10 +432,10 @@ h4 {
         display: none; } }
 
 .menu {
-  fill: #fff;
+  fill: #40a1da;
   align-self: center;
   cursor: pointer;
-  display: none; }
+  display: block; }
   @media only screen and (max-width: 50em) {
     .menu {
       display: block; } }
@@ -595,17 +601,19 @@ h4 {
 
 .dicediv {
   display: flex;
-  width: auto;
-  height: 220px;
+  width: 220px;
+  margin-left: 2rem;
+  height: auto;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center; }
 
 .roll {
   display: block;
-  width: 100px;
-  height: 30px;
+  width: 120px;
+  height: 40px;
   background-color: #ffe164;
+  margin-top: 2rem;
   border-radius: 5px;
   color: #d00303;
   text-transform: uppercase;
@@ -630,7 +638,7 @@ h4 {
   display: block;
   width: 120px;
   height: 60px;
-  margin: 2rem;
+  margin: 2rem auto;
   background-color: #ffe164;
   border-radius: 5px;
   color: #d00303;
@@ -673,12 +681,11 @@ h4 {
   position: absolute;
   bottom: 30px;
   right: 20px;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border: 1px solid black;
   box-shadow: 3px 3px 3px 3px 0, 0, 0, 0.7;
   border-radius: 50%;
-  background-color: #f6653c;
   z-index: 30;
   cursor: pointer; }
   @media only screen and (max-width: 50em) {
@@ -688,8 +695,7 @@ h4 {
 
 #piece2 {
   bottom: 30px;
-  right: 80px;
-  background-color: #7ebc59; }
+  right: 90px; }
 
 .id3 {
   position: absolute;
@@ -715,10 +721,10 @@ h4 {
   background-color: #7ebc59; }
 
 .drag2 {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
-  font-weight: bold; }
+  width: 200px;
+  margin-top: 2rem;
+  font-weight: bold;
+  text-align: center; }
 
 .links {
   grid-row: 3/4;

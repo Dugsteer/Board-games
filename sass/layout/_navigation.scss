@@ -124,7 +124,7 @@
     color: $color-blue;
     font-family: Montserrat, sans-serif;
     text-decoration: none;
-
+    display: none;
     &:hover {
       color: $color-yellow;
     }
@@ -140,10 +140,10 @@
 
 
 .menu {
-  fill: #fff;
+  fill: $color-blue;
   align-self: center;
   cursor: pointer;
-  display: none;
+  display: block;
 
   @media only screen and (max-width: $bp-medium){
     display: block;

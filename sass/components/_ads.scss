@@ -1,14 +1,9 @@
-// .ads {
-//     background-color: green;
-//     width: 90%;
-//     margin: auto;
-//     height: 60%;
-//  
+.sense {
+  grid-row: 1/2;
+  background-color: $color-blue;
+}
 
-// &-top {
-//     margin-top: 2vw;
-//     grid-row: 1/2;
-// }
-
-// }
-
+.sense-bottom {
+  grid-row: 5/6;
+  background-color: $color-blue;
+}

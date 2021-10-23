@@ -99,8 +99,16 @@ roll.addEventListener('click', rollDice);
 // Move pieces
 dragElement(document.getElementById("piece1"));
 dragElement(document.getElementById("piece2"));
-// dragElement(document.getElementById("piece3"));
-// dragElement(document.getElementById("piece4"));
+dragElement(document.getElementById("piece3"));
+dragElement(document.getElementById("piece4"));
+dragElement(document.getElementById("piece5"));
+dragElement(document.getElementById("piece6"));
+dragElement(document.getElementById("piece7"));
+dragElement(document.getElementById("piece8"));
+dragElement(document.getElementById("piece9"));
+dragElement(document.getElementById("piece10"));
+dragElement(document.getElementById("piece11"));
+dragElement(document.getElementById("piece12"));
 
 function dragElement(elmnt) {
   let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;

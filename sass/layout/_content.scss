@@ -18,7 +18,7 @@
    display: flex;
     background-color: $color-blue;
   color: $color-slate;
-  width: 60%;
+  width: 70%;
   height: auto;
   padding: 2rem 1rem;
   margin: 2rem 0;
@@ -53,7 +53,7 @@
 
 .imgdiv {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: auto;
   resize: both;
   overflow: scroll;
@@ -180,6 +180,14 @@
   100% {
     background-color: red;
   }
+}
+
+.counters {
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: 35%;
+  left: 0px;
 }
 
 .piece {

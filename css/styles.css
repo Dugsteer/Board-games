@@ -581,7 +581,7 @@ h4 {
   display: flex;
   background-color: #40a1da;
   color: #33363b;
-  width: 60%;
+  width: 70%;
   height: auto;
   padding: 2rem 1rem;
   margin: 2rem 0;
@@ -612,7 +612,7 @@ h4 {
 
 .imgdiv {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: auto;
   resize: both;
   overflow: scroll;
@@ -719,6 +719,13 @@ h4 {
     background-color: white; }
   100% {
     background-color: red; } }
+
+.counters {
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: 35%;
+  left: 0px; }
 
 .piece {
   position: absolute;

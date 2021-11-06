@@ -1,9 +1,24 @@
 .contents {
+  position: relative;
   display: flex;
+  align-items: stretch;
   grid-row: 2/3;
   background-color: $color-blue;
   color: $color-slate;
-  width: 60%;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  justify-content: space-around;
+  align-self: center;
+  justify-self: center;
+}
+
+.gamediv {
+   display: flex;
+    background-color: $color-blue;
+  color: $color-slate;
+  width: 70%;
   height: auto;
   padding: 2rem 1rem;
   margin: 2rem 0;
@@ -30,7 +45,7 @@
   clip-path: polygon(100% 0%, 0% 100%, 100% 99%);
   width: 50px;
   height: 50px;
-  background-color: $color-green;
+  background-color: $color-green-dark;
   z-index: 600;
   bottom: 0px;
   right: 0px;
@@ -38,17 +53,19 @@
 
 .imgdiv {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: auto;
   resize: both;
   overflow: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
+      box-shadow: $box-shadow-small;
+
 }
 
 .board img {
-  width: 100%;
+  width: 110%;
   height: auto;
 }
 
@@ -57,7 +74,8 @@
   width: 100px;
   background-color: $color-red;
   border-radius: 8px;
-  box-shadow: 3px 3px 3px (255, 255, 255, 0.9);
+        box-shadow: $box-shadow-large;
+
   color: whitesmoke;
   display: flex;
   align-items: center;
@@ -70,9 +88,10 @@
 
 .dicediv {
   display: flex;
-  width: 220px;
+  width: 200px;
   margin-left: 2rem;
   height: auto;
+  
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -83,6 +102,8 @@
   width: 120px;
   height: 40px;
   background-color: $color-yellow;
+      box-shadow: $box-shadow-small;
+
   margin-top: 2rem;
   border-radius: 5px;
   color: $color-red;
@@ -112,6 +133,8 @@
   height: 60px;
   margin: 2rem auto;
   background-color: $color-yellow;
+        box-shadow: $box-shadow-small;
+
   border-radius: 5px;
   color: $color-red;
   text-transform: uppercase;
@@ -159,53 +182,127 @@
   }
 }
 
-#piece1,
-#piece2 {
-  position: absolute;
-  bottom: 30px;
-  right: 20px;
-  height: 60px;
-  width: 60px;
-  border: 1px solid black;
-  box-shadow: 3px 3px 3px 3px (0, 0, 0, 0.7);
-  border-radius: 50%;
-  z-index: 30;
-  cursor: pointer;
+.counters {
+  height: auto;
+  width: 100px;
+  top: 35%;
+  left: 0px;
+}
 
-  @media only screen and(max-width: $bp-medium) {
-    height: 40px;
-    width: 40px;
-  }
+.piece {
+ position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: $color-green-dark;
+    border-radius: 100%;
+    z-index: 30;
+    cursor: pointer;
+}
+
+.piece img{
+    height: 100%;
+    width: 100%;
+        box-shadow: $box-shadow-large;
+        border-radius: 50%;
+
+}
+
+#piece1 {
+    top: 80px;
+    left: 40px;
 }
 
 #piece2 {
-  bottom: 30px;
-  right: 90px;
+    top: 80px;
+    left: 120px;
+        background-color: $color-halloween-white;
+
 }
 
-.id3 {
-  position: absolute;
-  height: 450px;
-  width: 220px;
-  cursor: pointer;
+#piece3 {
+    top: 160px;
+    left: 40px;
+        background-color: $color-halloween-white;
+
 }
 
-.id3 img {
-  height: 100%;
-  width: 100%;
+#piece4 {
+    top: 160px;
+    left: 120px;
 }
 
-.id4 {
-  position: absolute;
-  height: 450px;
-  width: 200px;
-  cursor: pointer;
+#piece6 {
+    top: 240px;
+    left: 40px;
 }
 
-.id4 img {
-  height: 100%;
-  width: 100%;
+#piece5 {
+    top: 240px;
+    left: 120px;
+            background-color: $color-halloween-white;
+
 }
+
+
+#piece8 {
+    top: 320px;
+    left: 40px;
+            background-color: $color-halloween-white;
+
+}
+
+#piece7 {
+    top: 320px;
+    left: 120px;
+}
+#piece9 {
+    top: 400px;
+    left: 40px;
+    
+}
+
+#piece12 {
+    top: 400px;
+    left: 120px;
+            background-color: $color-halloween-white;
+
+}
+#piece11 {
+    top: 480px;
+    left: 40px;
+            background-color: $color-halloween-white;
+
+}
+
+#piece10 {
+    top: 480px;
+    left: 120px;
+}
+
+
+// .id3 {
+//   position: absolute;
+//   height: 450px;
+//   width: 220px;
+//   cursor: pointer;
+// }
+
+// .id3 img {
+//   height: 100%;
+//   width: 100%;
+// }
+
+// .id4 {
+//   position: absolute;
+//   height: 450px;
+//   width: 200px;
+//   cursor: pointer;
+// }
+
+// .id4 img {
+//   height: 100%;
+//   width: 100%;
+// }
 
 .fileinput {
   background-color: #7ebc59;

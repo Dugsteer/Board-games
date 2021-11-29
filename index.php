@@ -17,7 +17,7 @@
 <body>
   <?php
 		// Retrieve the URL variables (using PHP).
-		$imgsrc = $_GET['imgsrc'] ? $_GET['imgsrc'] : 'SportsBoardGame.png';
+		$imgsrc = $_GET['imgsrc'];
     //Example call: http://localhost:3000/index.php?imgsrc=SnakesBoard.jpg
 	?>
 

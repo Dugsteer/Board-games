@@ -112,7 +112,7 @@
                 <div class="buttondiv">
                   
                   <button class="butclass" id="getButton" onclick="document.getElementById('getFile').click()">Load Game</button>
-                  <button class="butclass" id="chooseButton" onclick="location='boardgame-chooser.html'">Choose Game</button>
+                  <button class="butclass" id="chooseButton" onclick="location='boardgame-chooser.php'">Choose Game</button>
                   <button class="butclass" id="demoBut" onclick="playDemo();">Play This</button>
                   <p class="drag2" id="draggy">Drag pieces to play</p>
              </div>

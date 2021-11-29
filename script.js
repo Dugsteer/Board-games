@@ -1,6 +1,6 @@
 // LOADER, SIDEBAR and ABOUT INFO
 const sidey = document.getElementById('sidebar');
-const loader = document.getElementById("loaderDiv");
+// const loader = document.getElementById("loaderDiv");
 const extra = document.getElementById('info');
 const mainpic = document.getElementById('mainpic');
 const blue = window.matchMedia("(max-width: 800px)");
@@ -10,15 +10,6 @@ const blue = window.matchMedia("(max-width: 800px)");
 function show(){info.classList.toggle('xxc');};
 function unshow(){info.classList.remove('xxc');};
 
-//Center the loader wherever the page is
-function checkForTop (){loader.style.top = (window.pageYOffset) + "px";}
-checkForTop();
-
-//Manage the loader
-function stopLoader() {loader.classList.add("stop");}
-function startLoader(){loader.classList.remove("stop"); setTimeout(stopLoader, 1000);}
-setTimeout(stopLoader, 1000);
-
 //Stop the sidebar appearing on small screens with matchmedia
 function myFunction(x) {if (blue.matches) {sidey.classList.remove("block");}}
 function toggler() {sidey.classList.toggle("block");}
@@ -27,17 +18,28 @@ myFunction(blue);
 //GAME FUNCTIONALITY
 const img1 = document.getElementById('mypic'); 
 const inputpanel = document.getElementById('inputpanel');
-const getButton = document.getElementById('getButton');
 const dicediv = document.getElementById('dicediv');
+const choosebutton = document.getElementById('chooseButton');
+const getbutton = document.getElementById('getButton');
+const roll = document.querySelector('roll');
 const buttondiv = document.getElementById('buttondiv');
-const demoBut = document.getElementById('demoBut');
+const demobut = document.getElementById('demoBut');
 const draggy = document.getElementById('draggy');
+const board = document.getElementById("board");
+const die = document.querySelector(".dice");
+const imgdiv = document.getElementById("imgdiv");
+const rolly = document.getElementById("rolly");
+const me = document.getElementById("me");
 
 function playDemo(){
-  getButton.style.display = "none";
-  img1.style.display = "block";
+  demobut.style.display = "none";
+  getbutton.style.display = "none";
+    rolly.style.display = "block";
   dicediv.style.display = "flex";
-  demoBut.style.display = "none";
+  die.style.display = "flex";
+  choosebutton.style.display = "none";
+
+  
   draggy.style.display = "none";
 
 }
@@ -57,12 +59,7 @@ window.addEventListener('load', function() {
   });
 });
 
-const board = document.getElementById("board");
-const die = document.querySelector(".dice");
-const roll = document.getElementById("roll");
-const imgdiv = document.getElementById('imgdiv');
-const rolly = document.getElementById('rolly');
-const me = document.getElementById('me');
+
 
 
 function goforit(){
@@ -93,7 +90,7 @@ function rollDice(){
     setTimeout(setText, 200);
 };
 
-roll.addEventListener('click', rollDice);
+rolly.addEventListener('click', rollDice);
 
 
 // Move pieces

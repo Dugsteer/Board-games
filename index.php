@@ -17,7 +17,7 @@
 <body>
   <?php
 		// Retrieve the URL variables (using PHP).
-		$imgsrc = $_GET['imgsrc'];
+		$imgsrc = $_GET['imgsrc']? $_GET['imgsrc'] : 'jobs-board.webp';
     //Example call: http://localhost:3000/index.php?imgsrc=SnakesBoard.jpg
 	?>
 

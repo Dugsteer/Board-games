@@ -50,10 +50,13 @@ window.addEventListener('load', function() {
   document.querySelector('input[type="file"]').addEventListener('change', function() {
       if (this.files && this.files[0]) {
           img1.src = URL.createObjectURL(this.files[0]);
-          getButton.style.display = "none";
-          img1.style.display = "block";
+          demobut.style.display = "none";
+          getbutton.style.display = "none";
+          rolly.style.display = "block";
           dicediv.style.display = "flex";
-          demoBut.style.display = "none";
+          die.style.display = "flex";
+          choosebutton.style.display = "none";
+
           draggy.style.display = "none";
       }
   });

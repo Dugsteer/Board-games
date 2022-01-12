@@ -17,7 +17,7 @@
 <body>
   <?php
   // Retrieve the URL variables (using PHP).
-  $imgsrc = $_GET['imgsrc'] ? $_GET['imgsrc'] : 'jobs-board.webp';
+  $imgsrc = $_GET['imgsrc'] ? $_GET['imgsrc'] : 'xmas-board.webp';
   $background = $_GET['background'];
   $piecesfile = $_GET['pieces'] ? $_GET['pieces'] : 'heroes.php';
   //Example call: http://localhost:3000/index.php?imgsrc=SnakesBoard.jpg
@@ -78,7 +78,7 @@
 
     <div class="contents" style="background-color:<?php echo $background ?>">
 
-    <?php include "./$piecesfile" ?>
+      <?php include "./$piecesfile" ?>
 
       <div class="gamediv" style="background-color:<?php echo $background ?>">
         <div id="board" class="board">
@@ -135,22 +135,7 @@
   </footer>
 
   <div class="hidden"><img src="sprite2.svg" style="display: none">
-    <script>
-      <!--//
-      -->
-    <![CDATA[//><!--
-    var images = new Array();
-      function preload(){
-        for(i=0; i<preload.arguments.length; i++){
-          images[i] = new Image();
-          images[i].src = preload.arguments[i];
-        }
-      }
-    preload(
-    
-    )
-      //--><!]]>
-    </script>
+
   </div>
 
   <script src="./script.js"></script>
